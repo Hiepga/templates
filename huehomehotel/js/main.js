@@ -18,3 +18,12 @@
     $(window).bind("resize", ScaleSlider);
     $(window).bind("orientationchange", ScaleSlider);
 });
+
+
+
+ $('.content_gallery').nrTab({
+    tab:'.tab_gallery li',
+    view:'.detail_gallery',
+    action:'hover',
+    href:'ref'
+});
