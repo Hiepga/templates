@@ -1,3 +1,4 @@
+@import url(font-awesome.min.css);
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -94,7 +95,7 @@ body {
 }
 
 .wrapper .wrapper_main {
-  width: 1300px;
+  width: 1200px;
   margin: 0px auto;
 }
 
@@ -185,7 +186,7 @@ body {
 
 #main {
   overflow: hidden;
-  padding: 50px 0px;
+  padding: 50px 0px 0px;
 }
 
 #main .room {
@@ -193,7 +194,7 @@ body {
 }
 
 #main .room .title_rooms {
-  padding: 0px 0px 30px 0px;
+  padding: 0px 0px 20px 0px;
 }
 
 #main .room .title_rooms h3 {
@@ -213,7 +214,7 @@ body {
   background-color: black;
   position: absolute;
   top: 19px;
-  left: 22%;
+  left: 20%;
 }
 
 #main .room .title_rooms h3:after {
@@ -223,7 +224,7 @@ body {
   background-color: black;
   position: absolute;
   top: 19px;
-  right: 22%;
+  right: 20%;
 }
 
 #main .room .content_rooms li {
@@ -258,6 +259,107 @@ body {
   bottom: -100%;
 }
 
+#main .room .content_rooms li .thump_room .name_room .detail_room {
+  overflow: hidden;
+  padding: 5px;
+}
+
+#main .room .content_rooms li .thump_room .name_room .detail_room .top_rooms {
+  width: 95%;
+  overflow: hidden;
+  padding: 1px;
+}
+
+#main .room .content_rooms li .thump_room .name_room .detail_room .top_rooms li {
+  width: 59%;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+#main .room .content_rooms li .thump_room .name_room .detail_room .top_rooms li:last-child {
+  width: 40%;
+  text-align: center;
+}
+
+#main .room .content_rooms li .thump_room .name_room .detail_room .top_rooms li:last-child span {
+  display: inline-block;
+}
+
+#main .room .content_rooms li .thump_room .name_room .detail_room .bottom_rooms {
+  text-align: center;
+  width: 100%;
+  clear: both;
+}
+
+#main .room .content_rooms li .thump_room .name_room .detail_room .bottom_rooms .content_room {
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: 300;
+  line-height: 18px;
+  margin: 5px 0px 5px 0px;
+}
+
+#main .room .content_rooms li .thump_room .name_room .detail_room .bottom_rooms .content_room h3 {
+  color: #74c4ce;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+#main .room .content_rooms li .thump_room .name_room .detail_room .bottom_rooms .service {
+  width: 100%;
+  overflow: hidden;
+}
+
+#main .room .content_rooms li .thump_room .name_room .detail_room .bottom_rooms .service li {
+  width: 48%;
+  float: left;
+  margin-left: 2%;
+  padding: 2px 0px;
+}
+
+#main .room .content_rooms li .thump_room .name_room .detail_room .bottom_rooms .service li:nth-child(2n+1) {
+  margin-left: 0%;
+}
+
+#main .room .content_rooms li .thump_room .name_room .detail_room .bottom_rooms .service li p {
+  padding-left: 20px;
+  background: url(../images/check-left1.png) no-repeat 0px -1px;
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+#main .room .content_rooms li .thump_room .name_room .detail_room .bottom_rooms .btn_booking {
+  width: 51%;
+  clear: both;
+  padding: 5px 0px;
+  margin: 5px 0px;
+  background-color: #0b7d8a;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid #999;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 100;
+}
+
 #main .room .content_rooms li .thump_room:hover .name_room {
   bottom: 0%;
   -webkit-transition: all 0.3s ease 0s;
@@ -266,8 +368,10 @@ body {
 }
 
 #main .content_home {
-  width: 100%;
+  width: 95%;
   padding: 20px 0px;
+  overflow: hidden;
+  margin: 0px auto;
 }
 
 #main .content_home li {
@@ -276,6 +380,152 @@ body {
   margin-left: 2%;
 }
 
-#main .content_home li:first-child {
+#main .content_home li:first-child, #main .content_home li:last-child {
   margin-left: 0%;
+}
+
+#main .content_home li .title, #main .content_home li .intro_hotel .title, #main .content_home li .facilities .title, #main .content_home li .booking .title p {
+  padding: 10px 0px;
+}
+
+#main .content_home li .title p, #main .content_home li .intro_hotel .title p, #main .content_home li .facilities .title p, #main .content_home li .booking .title p p {
+  color: #78BBCB;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+#main .content_home li .content p, #main .content_home li .intro_hotel .content p p, #main .content_home li .facilities .content p p {
+  padding: 5px 0px;
+  background: url(../images/check-left.png) no-repeat 0px 4px;
+  padding-left: 30px;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-family: tahoma;
+  line-height: 22px;
+}
+
+#main .content_home li .intro_hotel .content p, #main .content_home li .facilities .content .intro_hotel p p {
+  background: none;
+  padding-left: 0px;
+  width: 86%;
+}
+
+#main .content_home li .facilities .content p span, #main .content_home li .intro_hotel .content .facilities p p span {
+  color: #78BBCB;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+#main .content_home li .booking {
+  width: 80%;
+  padding: 0px 5px 20px 5px;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  background: #f6f6f6;
+  float: right;
+  margin: 11px 0 0 0;
+}
+
+#main .content_home li .booking .title, #main .content_home li .booking .title p {
+  width: 93%;
+  margin: 0px auto;
+}
+
+#main .content_home li .booking .content .book_room, #main .content_home li .intro_hotel .content .booking p .book_room, #main .content_home li .facilities .content .booking p .book_room {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+#main .content_home li .booking .content .book_room input, #main .content_home li .intro_hotel .content .booking p .book_room input, #main .content_home li .facilities .content .booking p .book_room input {
+  width: 85%;
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px;
+  border: 1px solid #e2e2e2;
+  background: #f6f6f6;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 100;
+}
+
+#main .content_home li .booking .content .book_room input:first-child, #main .content_home li .intro_hotel .content .booking p .book_room input:first-child, #main .content_home li .facilities .content .booking p .book_room input:first-child {
+  margin-top: 0px;
+}
+
+#main .content_home li .booking .content .book_room .btn_booking, #main .content_home li .intro_hotel .content .booking p .book_room .btn_booking, #main .content_home li .facilities .content .booking p .book_room .btn_booking {
+  width: 40%;
+  height: 40px;
+  margin: 10px 0px;
+  background-color: #79c0c9;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid #999;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 100;
+  float: right;
+  margin-right: 23px;
+}
+
+#footer {
+  background-color: #1e1c1c;
+  overflow: hidden;
+}
+
+#footer .main_footer {
+  padding: 20px 0px;
+  overflow: hidden;
+}
+
+#footer .main_footer .infor_footer {
+  width: 45%;
+  float: left;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+#footer .main_footer .infor_footer li {
+  width: 100%;
+  padding: 5px 0px;
+}
+
+#footer .main_footer .contact_header {
+  width: 45%;
+  float: left;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: left;
+  text-transform: none;
+  font-weight: 300;
+}
+
+#footer .main_footer .contact_header li {
+  width: 100%;
+  padding: 5px 0px;
+}
+
+#footer .main_footer .contact_header li i {
+  margin-right: 10px;
 }

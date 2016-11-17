@@ -1,4 +1,5 @@
 @import "reset.scss";
+@import "font-awesome.min.css";
 @mixin text ($color, $size, $decoration, $align, $transform, $weight) {
 	color: $color;
 	font-size: $size;
@@ -17,7 +18,7 @@ body{
 
 .wrapper{
 	.wrapper_main{
-		width: 1300px;
+		width: 1200px;
 		margin: 0px auto;
 	}
 }
@@ -94,11 +95,11 @@ body{
 
 #main{
 	overflow: hidden;
-	padding: 50px 0px ;
+	padding: 50px 0px 0px;
 	.room{
 		overflow: hidden;
 		.title_rooms{
-			padding: 0px 0px 30px 0px;
+			padding: 0px 0px 20px 0px;
 			h3{
 				@include text(black, 28px , none, center, capitalize, 300);
 				position: relative;
@@ -109,7 +110,7 @@ body{
 					background-color: black;
 					position: absolute;
 					top: 19px;
-					left: 22%;
+					left: 20%;
 				}
 				&:after{
 					content: "";
@@ -118,7 +119,7 @@ body{
 					background-color: black;
 					position: absolute;
 					top: 19px;
-					right: 22%;
+					right: 20%;
 				}
 			}
 
@@ -148,6 +149,70 @@ body{
 						opacity: 0.8; 
 						position: absolute; 
 						bottom: -100%;
+						.detail_room{
+							overflow: hidden;
+							padding: 5px;
+							.top_rooms{
+								width: 95%;
+								overflow: hidden;
+								padding: 1px;
+								li{
+									width: 59%;
+									@include text(black, 14px , none, left, capitalize, bold);
+									&:last-child{
+										width: 40%;
+										text-align: center;
+										span{
+											display: inline-block;
+										}
+									}
+								}
+							}
+							.bottom_rooms{
+								text-align: center;
+								width: 100%;
+								clear: both;
+								.content_room{
+									@include text(black, 12px , none, left, capitalize, 300);
+									line-height: 18px;
+									margin: 5px 0px 5px 0px;
+									h3{
+										@include text(#74c4ce, 12px , none, left, capitalize, bold);
+									}
+								}
+								.service{
+									width: 100%;
+									overflow: hidden;
+									li{
+										width: 48%;
+										float: left;
+										margin-left: 2%;
+										padding: 2px 0px;
+										&:nth-child(2n+1){
+											margin-left: 0%;
+										}
+										p{
+											padding-left: 20px;
+											background: url(../images/check-left1.png) no-repeat 0px -1px;
+											@include text(black, 12px , none, left, capitalize, 300);
+										}
+									}
+								}
+								.btn_booking{
+									width: 51%;
+									clear: both;
+									padding: 5px 0px;
+									margin: 5px 0px;
+									background-color: #0b7d8a;
+									border: none;
+									cursor: pointer;
+									border-radius: 3px;
+									border: 1px solid #999;
+									@include text(#fff, 16px , none, center, capitalize, 100);
+								}
+							}
+						}
+						
 					}
 					
 					&:hover{
@@ -164,16 +229,139 @@ body{
 		}
 	}
 	.content_home{
-		width: 100%;
+		width: 95%;
 		padding: 20px 0px;
+		overflow: hidden;
+		margin: 0px auto;
 		li{
 			width: 32%;
 			float: left; 
 			margin-left: 2%;
-			&:first-child{
+			&:first-child, &:last-child{
 				margin-left: 0%;
 			}
+			.title{
+				padding: 10px 0px;
+				p{
+					@include text(#78BBCB, 20px , none, left, capitalize, 300);
+				}
+			}
+			.content{
+				p{
+					padding: 5px 0px;
+					background: url(../images/check-left.png) no-repeat 0px 4px;
+					padding-left: 30px;
+					@include text(black, 14px , none, left, capitalize, 300);
+					font-family: tahoma;
+					line-height: 22px;
+				}
+			}
+			.intro_hotel{
+				.title{
+					@extend .title;
+				}
+				.content{
+					p{
+						@extend .content;
+						background: none;
+						padding-left: 0px;
+						width: 86%;	
+					}
+				}
+			}
+			.facilities{
+				.title{
+					@extend .title;
+				}
+				.content{
+					p{
+						@extend .content;
+						span{
+							@include text(#78BBCB, 14px , none, left, capitalize, 300);
+						}
+					}
+				}
+			}
+			.booking{
+				width: 80%;
+				padding: 0px 5px 20px 5px;
+				border: 1px solid #e2e2e2;
+				border-radius: 5px;
+				background: #f6f6f6;
+				float: right;
+				margin: 11px 0 0 0;
+				.title{
+					width: 93%;
+					margin: 0px auto;
+					p{
+						@extend .title;
+					}
+				}
+				.content{
+					.book_room{
+						width: 100%;
+						text-align: center;
+						overflow: hidden;
+						input{
+							width: 85%;
+							margin: 10px 0px 10px 0px;
+							padding: 10px 0px;
+							border: 1px solid #e2e2e2;
+							background: #f6f6f6;
+							@include text(black, 14px , none, center, capitalize, 100);
+							&:first-child{
+								margin-top: 0px;
+							}
+						}
+						.btn_booking{
+							width: 40%;
+							height: 40px;
+							margin: 10px 0px;
+							background-color: #79c0c9;
+							border: none;
+							cursor: pointer;
+							border-radius: 3px;
+							border: 1px solid #999;
+							@include text(#fff, 16px , none, center, capitalize, 100);
+							float: right;
+							margin-right: 23px;
+						}
+					}
+				}
+			}
 		}
+	}
+}
+
+#footer{
+	background-color: #1e1c1c;
+	overflow: hidden;
+	.main_footer{
+		padding: 20px 0px;
+		overflow: hidden;
+		.infor_footer{
+			width: 45%;
+			float: left;
+			@include text(white, 14px , none, left, capitalize, 300);
+			li{
+				width: 100%;
+				padding: 5px 0px;
+			}
+		}
+		.contact_header{
+			width: 45%;
+			float: left;
+			@include text(white, 16px , none, left, none, 300);
+			li{
+				width: 100%;
+				padding: 5px 0px;
+				i{
+					margin-right: 10px;
+				}
+			}
+			
+		}
+
 	}
 }
 
