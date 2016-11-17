@@ -1,0 +1,181 @@
+@import "reset.scss";
+@mixin text ($color, $size, $decoration, $align, $transform, $weight) {
+	color: $color;
+	font-size: $size;
+	text-decoration: $decoration;
+	text-align: $align;
+	text-transform: $transform;
+	font-weight: $weight;
+}
+.img-responsive{
+	max-width: 100%;
+	max-height: 100%
+}
+body{
+	font-family: tahoma;
+}
+
+.wrapper{
+	.wrapper_main{
+		width: 1300px;
+		margin: 0px auto;
+	}
+}
+
+#header{
+	position: relative;
+	min-height: 590px;
+	.content_header{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 2;
+		width: 100%;
+		height: 70px;
+		background: url(../images/bg-1.jpg) no-repeat center top;
+		background-size: cover;
+		.logo_header{
+			background: url(../images/bg-0.jpg) no-repeat center top;
+			background-size: cover;
+			width: 250px;
+			height: 130px;
+			float: left;
+			a{
+				width: 100%;
+				height: 100%;
+				display: block;
+				text-align: center;
+				img{
+					margin: 0px auto;
+					padding: 5px 0px;
+				}
+			}
+		}
+		.menu_header{
+			float: right;
+			margin-right: 90px;
+			margin-top: 20px;
+			li{
+				float: left;
+				a{
+					padding: 5px 20px;
+					display: block;
+					@include text(black, 22px , none, center, capitalize, 300);
+				}
+			}
+		}
+	}
+	.slide_home{
+		width: 100%;
+		min-height: 50px;
+		position: absolute;
+		top: 70px;
+		z-index: 1;
+		#slider1_container{
+			visibility: hidden; 
+			position: relative; 
+			margin: 0 auto;
+			top: 0px; 
+			left: 0px; 
+			width: 1300px;
+			height: 500px;
+			overflow: hidden;
+			.content_slide{
+				position: absolute; 
+				left: 0px; 
+				top: 0px;
+				width: 1300px; 
+				height: 500px; 
+				overflow: hidden;
+			}
+		}
+	}
+}
+
+#main{
+	overflow: hidden;
+	padding: 50px 0px ;
+	.room{
+		overflow: hidden;
+		.title_rooms{
+			padding: 0px 0px 30px 0px;
+			h3{
+				@include text(black, 28px , none, center, capitalize, 300);
+				position: relative;
+				&:before{
+					content: "";
+					width: 200px;
+					height: 1px;
+					background-color: black;
+					position: absolute;
+					top: 19px;
+					left: 22%;
+				}
+				&:after{
+					content: "";
+					width: 200px;
+					height: 1px;
+					background-color: black;
+					position: absolute;
+					top: 19px;
+					right: 22%;
+				}
+			}
+
+		}
+		.content_rooms{
+			li{
+				width: 24%;
+				float: left;
+				margin-left: 1%;
+				&:first-child{
+					margin-left: 0%;
+				}
+				.thump_room{ 
+					width: 100%;
+					overflow: hidden; 
+					position: relative;
+					.images_rooms{
+						background-color: #EBEBEB;
+						overflow: hidden;
+					}
+					.name_room{
+						width: 100%; 
+						height: 100%; 
+						background: rgba(239, 241, 239, 0.9); 
+						color: black; 
+						padding: 0px 5px; 
+						opacity: 0.8; 
+						position: absolute; 
+						bottom: -100%;
+					}
+					
+					&:hover{
+						.name_room{
+							bottom: 0%;
+							-webkit-transition: all 0.3s ease 0s;
+							   -o-transition: all 0.3s ease 0s;
+							      transition: all 0.3s ease 0s;
+						}
+					}
+				}
+				
+			}
+		}
+	}
+	.content_home{
+		width: 100%;
+		padding: 20px 0px;
+		li{
+			width: 32%;
+			float: left; 
+			margin-left: 2%;
+			&:first-child{
+				margin-left: 0%;
+			}
+		}
+	}
+}
+
+
+

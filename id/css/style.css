@@ -1,0 +1,352 @@
+@import url(character.css);
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background: url(../images/bg.jpg) no-repeat center top;
+  background-size: cover;
+  font-family: tahoma;
+}
+
+.wrapper .wrapper_main {
+  width: 1000px;
+  margin: 0px auto;
+}
+
+.wrapper .wrapper_main .login {
+  width: 35%;
+  height: auto;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  float: right;
+  margin: 10% 5% 0px 0px;
+  background-color: rgba(243, 243, 243, 0.8);
+  position: relative;
+}
+
+.wrapper .wrapper_main .login .login_form {
+  text-align: center;
+}
+
+.wrapper .wrapper_main .login .login_form h4 {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0px;
+  line-height: 20px;
+}
+
+.wrapper .wrapper_main .login .login_form input {
+  width: 65%;
+  height: 40px;
+  margin: 10px 0px;
+  padding: 0px 20px;
+  border: none;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #999;
+  border-radius: 3px;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 100;
+}
+
+.wrapper .wrapper_main .login .login_form .btn_login {
+  width: 77%;
+  height: 40px;
+  margin: 10px 0px;
+  background-color: #7ba56f;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  border: 1px solid #999;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 100;
+}
+
+.wrapper .wrapper_main .login .login_form .btn_login:hover {
+  background-color: #66A854;
+}
+
+.wrapper .wrapper_main .login .register_form {
+  text-align: center;
+}
+
+.wrapper .wrapper_main .login .register_form h4 {
+  color: black;
+  font-size: 26px;
+  text-decoration: none;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: 100;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.wrapper .wrapper_main .login .register_form input {
+  width: 70%;
+  height: 40px;
+  margin: 10px 0px;
+  padding: 0px 20px;
+  border: 1px solid #504e4e;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #999;
+  border-radius: 3px;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 100;
+}
+
+.wrapper .wrapper_main .login .register_form .btn_login {
+  width: 83%;
+  height: 40px;
+  margin: 10px 0px;
+  background-color: #7ba56f;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 100;
+  border-radius: 3px;
+  border: 1px solid #999;
+}
+
+.wrapper .wrapper_main .login .register_form .btn_login:hover {
+  background-color: #66A854;
+}
+
+.wrapper .wrapper_main .login .login_different {
+  padding: 10px 0px 20px 0px;
+}
+
+.wrapper .wrapper_main .login .login_different .title {
+  padding: 0px 0px 20px 0px;
+  overflow: hidden;
+}
+
+.wrapper .wrapper_main .login .login_different .title h3 {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: 100;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.wrapper .wrapper_main .login .login_different .title h3:after {
+  content: "";
+  width: 40px;
+  height: 1px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: black;
+}
+
+.wrapper .wrapper_main .login .login_different .title h3:before {
+  content: "";
+  width: 40px;
+  height: 1px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: black;
+}
+
+.wrapper .wrapper_main .login .login_different ul {
+  overflow: hidden;
+  margin-left: 6px;
+}
+
+.wrapper .wrapper_main .login .login_different ul li {
+  float: left;
+  width: 150px;
+  margin: 0px 10px;
+}
+
+.wrapper .wrapper_main .login .login_different ul li a {
+  display: block;
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 0px 0px 4px rgba(0, 0, 0, 0.28);
+  border-radius: 3px;
+}
+
+.wrapper .wrapper_main .login .login_different ul li a.google {
+  background: #dd4b39 url(../images/logo-google.png) no-repeat left center;
+}
+
+.wrapper .wrapper_main .login .login_different ul li a.facebook {
+  background: #3c5a99 url(../images/logo-facebook.png) no-repeat left center;
+}
+
+.wrapper .wrapper_main .login .function_form {
+  overflow: hidden;
+  padding: 7px 0px;
+}
+
+.wrapper .wrapper_main .login .function_form li {
+  width: 100%;
+  padding: 5px 0px 3px 0px;
+}
+
+.wrapper .wrapper_main .login .function_form li p {
+  width: 100%;
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: inherit;
+  font-weight: 100;
+}
+
+.wrapper .wrapper_main .login .function_form li p a {
+  display: inline-block;
+  color: red;
+  font-size: 14px;
+  text-decoration: none;
+  text-align: left;
+  text-transform: inherit;
+  font-weight: 100;
+}
+
+.wrapper .wrapper_main .login .function_form li p a:hover {
+  color: red;
+}
+
+.wrapper .wrapper_main .block {
+  width: 48%;
+}
+
+.wrapper .wrapper_main .block .front-welcome {
+  width: 100%;
+}
+
+.wrapper .wrapper_main .block .front-welcome .front-welcome-text {
+  color: #FFF;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.wrapper .wrapper_main .block .front-welcome .front-welcome-text h1 {
+  font-size: 25pt;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 35pt;
+}
+
+.wrapper .wrapper_main .block .front-welcome .front-welcome-text p {
+  line-height: 2;
+  font-size: 14pt;
+}
